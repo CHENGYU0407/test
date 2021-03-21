@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+<util:list id="u1">
+<bean id="1" class="com.spring.demo.Book"></bean>
+<bean id="2" class="com.spring.demo.Book"></bean>
+<bean id="3" class="com.spring.demo.Book"></bean>
+</util:list>
+<bean id="6" class="com.spring.demo.ArrayAndCollectionInjectionTest">
+<property name="list" ref="u1">
+
+</property>
+</bean>
+<bean id="8" class="com.spring.demo.ArrayAndCollectionInjectionTest">
+<property name="list" >
+<list>
+<ref bean="1"></ref><!-- 内部的bean是不可见的！ -->
+</list>
+</property>
+</bean>
+</beans>

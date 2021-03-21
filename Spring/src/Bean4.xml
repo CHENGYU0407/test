@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="bean4" class="com.spring.demo.ArrayAndCollectionInjectionTest">
+<property name="array">
+<array>
+<value>1</value>
+<value>2</value>
+<value>3</value>
+<value>4</value>
+<value>5</value>
+<value>6</value>
+</array>
+</property>
+<property name="map">
+<map>
+<entry key="1" value="1"></entry>
+<entry key="2" value="2"></entry>
+<entry key="3" value="3"></entry>
+</map>
+</property>
+<property name="list">
+<list>
+<ref bean="b1"></ref>
+<ref bean="b2"></ref>
+<ref bean="b3"></ref><!-- 在数组/集合中加入对象用ref标签即可 -->
+</list>
+</property>
+
+</bean>
+<bean class="com.spring.demo.Book" id="b1"></bean>
+<bean class="com.spring.demo.Book" id="b2"></bean>
+<bean class="com.spring.demo.Book" id="b3"></bean>
+</beans>

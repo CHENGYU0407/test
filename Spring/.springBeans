@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.9.16.202101112345-CI-B2760]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>src/com/spring/demo/beans1.xml</config>
+		<config>src/Beans2.xml</config>
+		<config>src/Beans2_Optimization.xml</config>
+		<config>src/Bean3.xml</config>
+		<config>src/Bean4.xml</config>
+		<config>src/Bean4_Optimization.xml</config>
+		<config>src/Bean5.xml</config>
+		<config>src/AuthorityControlBeanTest.xml</config>
+		<config>src/Bean6.xml</config>
+		<config>src/Bean7.xml</config>
+		<config>src/Bean00.xml</config>
+		<config>src/Bean01.xml</config>
+		<config>src/com/spring/demo/Injection2.xml</config>
+	</configs>
+	<autoconfigs>
+	</autoconfigs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>

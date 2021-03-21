@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="book" class="com.spring.demo.Book" p:price="123.89" 
+p:specialSymbols="&lt;南京&gt;"><!-- lt和gt是转义符号 -->
+<!-- 设置控制用null标签，直接赋值"null"其实是长度为4的字符串了！ -->
+<property name="name"><null></null></property>
+<!-- <property name="specialSymbols">
+<value>
+<![CDATA[<<南京>>]]>CDATA表示不会被XML解析的文件，可以在中写特殊符号
+</value> ></property-->
+
+</bean>
+
+</beans>
